@@ -32,7 +32,7 @@ module.exports = {
           const channelname = interaction.member.voice.channel.name.toLowerCase();
           //console.log(channelname)
           if(!channelname.includes("civilian") && !channelname.includes("scenario")) return interaction.reply("You aren't in a whitelisted voice chat.")
-          const embed = await interaction.client.Embed("☎️Dialing 911", "You have been moved to the 911 channel.\nA dispatcher will come to you soon.")
+          const embed = await interaction.client.Embed("☎️ Dialing 911", "You have been moved to the 911 channel.\nA dispatcher will come to you soon.")
           interaction.reply({embeds: [embed]})
          await interaction.member.voice.setChannel(emergency)
           const channel = interaction.member.voice.channel;

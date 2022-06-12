@@ -38,7 +38,7 @@ module.exports = {
           const channel = interaction.member.voice.channel;
           let connection
          await interaction.member.guild.channels.cache.get(emergency).members.forEach((tempMember) => {
-            if (tempMember.roles.cache.some(role => role.name === 'dispatch')) {
+            if (tempMember.roles.cache.some(role => role.name === 'Hillview County Central Dispatch')) {
                Dispatch = true
             }
         });

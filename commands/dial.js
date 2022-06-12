@@ -13,7 +13,7 @@ module.exports = {
 
 	async execute(interaction) {
         const client = interaction.client
-    return interaction.reply("This command has been disabled by the bot owner.")
+     interaction.reply("This command has been disabled by the bot owner.")
       const Num = interaction.options.getString('string')
       const delay = ms => new Promise(res => setTimeout(res, ms));
       const guildConf = await client.getPhone(interaction.guild);

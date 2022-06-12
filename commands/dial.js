@@ -93,7 +93,7 @@ module.exports = {
             await playSong()
 
             connection.subscribe(player)
-           await delay(4000)
+           await delay(1200)
             connection.destroy()
             break;
             default:
